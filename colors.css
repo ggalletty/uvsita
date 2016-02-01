@@ -1,0 +1,46 @@
+html,body {
+      height:100%;
+}
+body {
+  transition:all 0.4s;
+  font-family: sans-serif;
+  text-align: center;
+}
+h1 {
+  font-size: 150px;
+  transition:all 0.4s;
+  /*top:50%;*/
+  position: relative;
+  color:rgba(0,0,0,0.4);
+}
+span {
+  color:rgba(0,0,0,0.4);
+  /*text-shadow:1px 1px 0 rgba(0,0,0,0.5);*/
+  padding:10px;
+  display: inline-block;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.rosa {background: pink}
+.rosso {background: red}
+.salmone {background: salmon}
+.magenta {background: magenta}
+.viola {background: violet}
+.prugna {background: plum}
+.pomodoro {background: tomato}
+.alzavola {background: teal}
+.argento {background: silver}
+.senape {background: #FFE118}
+.albicocca {background: #FBCEB1}
+.zafferano {background: #F4C430}
+.asparago {background: #87A96B}
+.azzurro {background: skyblue}
+.ceruleo {background: #007BA7}
+.ciliegia {background: #DE3163}
+.menta {background: #A6FBB2}
+.melanzana {background: #990066}
+.cioccolato {background: chocolate}
+.eliotropo {background: #DF73FF}
+.pistacchio {background: #93C572}
+.caraibico {background: #00E1AD}
