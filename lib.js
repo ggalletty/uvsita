@@ -1,9 +1,10 @@
 var speech  = function(){
-
-  var recognition = new webkitSpeechRecognition();
-    recognition.lang = "it";
-    recognition.continuous = true;
-    recognition.interimResults = true;
+  var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
+  var recognition = new SpeechRecognition();
+  recognition.lang = "it-IT";
+  recognition.continuous = true;
+  recognition.interimResults = true;
+  recognition.maxAlternatives = 1;
 
   recognition.onresult = function(event) {
     var colour = event.results[event.results.length - 1][0].transcript;
@@ -12,11 +13,11 @@ var speech  = function(){
     $('body').removeClass().addClass(colour);
     $('h1').text(colour);
   }
-  recognition.start();
 
+  recognition.start();
 }
 
-if (!('webkitSpeechRecognition' in window)) {
+if (!('webkitSpeechRecognition' in window) && !('SpeechRecognition' in window)) {
   alert("Sorry you require a browser that supports speech recognition");
 }
 else {
